@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        [class*="c-"]{
+            width: 194px;
+            height: 403px;
+            overflow: hidden;
+        }
+        .f1, .f2{
+            display: flex;
+        }
+        .c-2 img{
+            transform: translate(-194px);
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .c-2:hover img{
+            opacity: 0.2;
+        }
+        .c-3 img{
+            transform: translate(-388px, 0);   
+            transition: 2s transform;
+        }
+        .c-3:hover img{
+            transform: rotate(200deg);
+        }
+        
+        .c-4 img{
+            transform: translate(0, -403px);
+            transition: 2s transform;
+        }
+        .c-4:hover img{
+            transform: scale(1.5);
+        }
+        .c-5 img{
+            transform: translate(-194px,-403px);
+             transition: 2s transform;
+        }
+         .c-5:hover img{
+            transform: translate(0, -403px);
+        }
+        .c-6 img{
+            transform: translate(-388px, -403px);
+            transition: 0.5s opacity;
+        }
+        .c-6:hover img{
+           opacity: 0.4
+        }
+        .c-6:hover{
+            background: #770000;
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+   
+   <div class="f1">
+   
+        <div class="c-1">
+            <img src="img/busto_1.jpg" alt="">
+        </div>
+         <div class="c-2">
+            <img src="img/busto_1.jpg" alt="">
+        </div>
+    
+         <div class="c-3">
+            <img src="img/busto_1.jpg" alt="">
+        </div>
+    </div>
+    
+    <div class="f2">
+         <div class="c-4">
+            <img src="img/busto_1.jpg" alt="">
+        </div>
+    
+         <div class="c-5">
+            <img src="img/busto_1.jpg" alt="">
+        </div>
+    
+         <div class="c-6">
+            <img src="img/busto_1.jpg" alt="">
+        </div>
+    </div>
+  </div>
+</body>
+</html>
